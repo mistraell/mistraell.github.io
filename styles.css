@@ -420,7 +420,7 @@ section.about {
     }
 }
 /* Адаптация под мобильные устройства */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .section h1 {
         font-size: 32px;
     }
