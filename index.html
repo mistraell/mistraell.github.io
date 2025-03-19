@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Йога</title>
+</head>
+<body>
+<div class="scroll-progress"></div>
+<header class="top-menu">
+    <div class="logo"><img src="content/images/logo.png"></div>
+    <nav class="nav-links">
+        <a href="#">СТУДИИ</a>
+        <a href="#">НАПРАВЛЕНИЯ</a>
+        <a href="#">РАСПИСАНИЕ</a>
+        <a href="#">ЦЕНЫ</a>
+        <a href="#">АКЦИИ</a>
+        <a href="#">О НАС</a>
+        <a href="#">ВАКАНСИИ</a>
+        <a href="#">ТУРЫ</a>
+        <a href="#">БЛОГ</a>
+        <a href="#">ФРАНШИЗА</a>
+    </nav>
+    <button class="menu-toggle" onclick="openMenu()">☰</button>
+</header>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<!-- Боковое меню -->
+<aside class="side-menu" id="side-menu">
+    <button class="close-btn" onclick="closeMenu()">✖</button>
+    <ul>
+        <li><a href="#">Выбрать студию</a></li>
+        <li><a href="#">Тест – выбор направления</a></li>
+        <li><a href="#">Расписание</a></li>
+        <li><a href="#">Цены</a></li>
+        <li><a href="#">Акции и мероприятия</a></li>
+        <li><a href="#">Подарочные сертификаты</a></li>
+        <li><a href="#">Приложение</a></li>
+        <li><a href="#">Контакты студий</a></li>
+        <li><a href="#">О YOGI ROOM</a></li>
+        <li><a href="#">ТУРЫ</a></li>
+        <li><a href="#">ФРАНШИЗА</a></li>
+        <li><a href="#">ВАКАНСИИ</a></li>
+        <li><a href="#">БЛОГ</a></li>
+        <li><a href="#">ОБУЧЕНИЕ ДЛЯ ПРЕПОДАВАТЕЛЕЙ</a></li>
+    </ul>
+</aside>
+<section class="section first">
+    <div>
+        <h1>Добро пожаловать!</h1>
+        <p>Откройте для себя новый мир с нами. Уникальные возможности, обучение и сообщество.</p>
+        <div class="btn-container">
+            <button class="btn primary">Присоединиться</button>
+            <button class="btn secondary">Подробнее</button>
+        </div>
+    </div>
+</section>
+<section class="section about">
+    <div class="about-text">
+        <h2>О СТУДИЯХ YOGI ROOM</h2>
+        <h3>НАША МИССИЯ</h3>
+        <p>
+            Мы работаем, чтобы дать людям возможность найти пути к себе: к здоровой,
+            осознанной и сбалансированной жизни, делая лучшие практики йоги
+            доступными каждому.
+        </p>
+    </div>
+    <div class="about-image">
+        <img src="content/images/backgrounds/bg2.jpg">
+        <div class="overlay-text">
+            <h3>ФОРМУЛА БАЛАНСА YOGI ROOM</h3>
+            <div class="steps">
+                <div class="step">моменты работы с собой, своим телом и душой</div>
+                <div class="plus">+</div>
+                <div class="step">регулярная практика в комфортном пространстве</div>
+                <div class="plus">+</div>
+                <div class="step">поддержка профессионалов и сообщество единомышленников</div>
+                <div class="equals">=</div>
+                <div class="result">внутренняя гармония и принятие себя</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
