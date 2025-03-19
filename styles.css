@@ -420,9 +420,9 @@ section.about {
     }
 }
 /* Адаптация под мобильные устройства */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .section h1 {
-        font-size: 72px;
+        font-size: 172px;
     }
 
     .section p {
