@@ -5,8 +5,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: factora;
+    src: url("content/fonts/TRIAL_FactorA-Regular.otf");
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: factora, sans-serif;
 }
 
 /* Верхнее меню */
@@ -54,6 +59,7 @@ body {
 
 /* Боковое меню (бургер-кнопка) */
 .menu-toggle {
+    color: white;
     background: #00b388;
     width: 45px;
     height: 45px;
@@ -259,7 +265,7 @@ body {
 }
 
 section.about {
-    background: #1a1a1a;
+    background: #2b2a29;
     color: white;
     padding: 80px 10%;
     gap: 40px;
@@ -415,7 +421,7 @@ section.about {
 }
 .section.teachers {
     display: block;
-    background: #1a1a1a;
+    background: #2b2a29;
     color: white;
     width: 100%;
     height: 100%;
@@ -432,6 +438,7 @@ section.about {
 }
 .teacher-card p {
     font-size: 16px;
+    margin-bottom: 10px;
 }
 .description-container{
     height: 120px;
@@ -446,11 +453,13 @@ section.about {
     border-radius: 10px;
     padding-bottom: 10px;
     text-align: center;
+    margin-bottom: 30px;
 }
 .teacher-card button {
     background: #00b388;
     color: white;
-    font-size: 16px;
+    border-radius: 5px;
+    font-size: 14px;
     border: none;
     padding: 6px;
 }
@@ -494,7 +503,9 @@ section.about {
         padding: 10px 20px;
     }
 
-
+    .section h1 {
+        font-size: 72px;
+    }
     .btn-container {
         flex-direction: column;
     }
@@ -505,7 +516,13 @@ section.about {
     .about-image{
         display: none;
     }
-
+    .description-container p{
+        font-size: 16px;
+    }
+    .btn {
+        width: 60%;
+        align-self: center;
+    }
     .menu-toggle {
         display: block;
     }
