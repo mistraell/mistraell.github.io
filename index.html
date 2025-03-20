@@ -10,16 +10,15 @@
 <header class="top-menu">
     <div class="logo"><img src="content/images/logo.png"></div>
     <nav class="nav-links">
-        <a href="#">СТУДИИ</a>
+        <a href="#about">О НАС</a>
+        <a href="#teachers">ПРЕПОДАВАТЕЛИ</a>
         <a href="#">НАПРАВЛЕНИЯ</a>
         <a href="#">РАСПИСАНИЕ</a>
-        <a href="#">ЦЕНЫ</a>
+        <a href="#">КАТАЛОГ</a>
+        <a href="#">НОВОСТИ</a>
         <a href="#">АКЦИИ</a>
-        <a href="#">О НАС</a>
-        <a href="#">ВАКАНСИИ</a>
-        <a href="#">ТУРЫ</a>
-        <a href="#">БЛОГ</a>
-        <a href="#">ФРАНШИЗА</a>
+        <a href="#">ОТЗЫВЫ</a>
+        <a href="#">КОНТАКТЫ</a>
     </nav>
     <button class="menu-toggle" onclick="openMenu()">☰</button>
 </header>
@@ -46,7 +45,7 @@
         <li><a href="#">ОБУЧЕНИЕ ДЛЯ ПРЕПОДАВАТЕЛЕЙ</a></li>
     </ul>
 </aside>
-<section class="section first">
+<section class="section first" id="welcome">
     <div>
         <h1>Добро пожаловать!</h1>
         <p>Откройте для себя новый мир с нами. Уникальные возможности, обучение и сообщество.</p>
@@ -56,7 +55,7 @@
         </div>
     </div>
 </section>
-<section class="section about">
+<section class="section about" id="about">
     <div class="about-text">
         <h2>О СТУДИЯХ YOGI ROOM</h2>
         <h3>НАША МИССИЯ</h3>
@@ -81,6 +80,56 @@
             </div>
         </div>
     </div>
+</section>
+<section class="section teachers" id="teachers">
+    <h1>НАШИ ПРЕПОДАВАТЕЛИ</h1>
+    <p>Принимаем в команду только сертифицированных инструкторов с большим практическим опытом</p>
+
+    <div class="teachers" id="teachers-list">
+        <div class="teacher-card">
+            <div class="teacher-image-container">
+                <img src="content/images/teachers/teacher1.png" alt="Преподаватель 1">
+            </div>
+            <div class="description-container">
+                <h3>John Doe</h3>
+                <p>Йога</p>
+            </div>
+            <button>ЗАГРУЗИТЬ ЕЩЕ</button>
+        </div>
+        <div class="teacher-card">
+            <div class="teacher-image-container">
+                <img src="content/images/teachers/teacher1.png" alt="Преподаватель 1">
+            </div>
+            <div class="description-container">
+                <h3>John Doe</h3>
+                <p>Йога</p>
+            </div>
+            <button>ЗАГРУЗИТЬ ЕЩЕ</button>
+        </div>
+        <div class="teacher-card">
+            <div class="teacher-image-container">
+                <img src="content/images/teachers/teacher1.png" alt="Преподаватель 1">
+            </div>
+            <div class="description-container">
+                <h3>John Doe</h3>
+                <p>Йога</p>
+            </div>
+            <button>ЗАГРУЗИТЬ ЕЩЕ</button>
+        </div>
+        <div class="teacher-card">
+            <div class="teacher-image-container">
+                <img src="content/images/teachers/teacher1.png" alt="Преподаватель 1">
+            </div>
+            <div class="description-container">
+                <h3>John Doe</h3>
+                <p>Йога</p>
+            </div>
+            <button>ЗАГРУЗИТЬ ЕЩЕ</button>
+        </div>
+
+    </div>
+
+    <button class="btn primary" id="load-more">ЗАГРУЗИТЬ ЕЩЕ</button>
 </section>
 
 <script src="index.js"></script>

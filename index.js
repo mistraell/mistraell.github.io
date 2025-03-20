@@ -6,6 +6,7 @@ function openMenu() {
 function closeMenu() {
     document.getElementById("side-menu").classList.remove("active");
     document.getElementById("overlay").classList.remove("active");
+
 }
 document.addEventListener("scroll", function () {
     const scrollProgress = document.querySelector(".scroll-progress");
