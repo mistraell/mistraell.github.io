@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ac7cbcc-1e8b-4a32-a585-b467d2679403" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/images/backgrounds/bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/images/backgrounds/bg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/images/backgrounds/bg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/images/backgrounds/bg2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
@@ -17,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,6 +56,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\mistraell.github.io" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$">
       <method v="2" />
@@ -73,7 +83,11 @@
       <updated>1742406469016</updated>
       <workItem from="1742406470032" duration="3631000" />
       <workItem from="1742414302647" duration="1762000" />
-      <workItem from="1742448679657" duration="30975000" />
+      <workItem from="1742448679657" duration="31382000" />
+      <workItem from="1742571347523" duration="11798000" />
+      <workItem from="1742643769007" duration="15847000" />
+      <workItem from="1742724301860" duration="25493000" />
+      <workItem from="1742801839198" duration="13110000" />
     </task>
     <servers />
   </component>

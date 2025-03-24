@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles.css">
+      <title>Йога</title>
+</head>
+<body>
+<div class="scroll-progress"></div>
+<header class="top-menu">
+  <div class="logo"><img src="content/images/logo.png"></div>
+  <nav class="nav-links">
+    <a href="#about">О НАС</a>
+    <a href="teachers.html">ПРЕПОДАВАТЕЛИ</a>
+    <a href="#">НАПРАВЛЕНИЯ</a>
+    <a href="#">РАСПИСАНИЕ</a>
+    <a href="catalog.html">КАТАЛОГ</a>
+    <a href="news.html">НОВОСТИ</a>
+    <a href="news.html#actions">АКЦИИ</a>
+    <a href="#">ОТЗЫВЫ</a>
+    <a href="#">КОНТАКТЫ</a>
+  </nav>
+  <button class="menu-toggle" onclick="openMenu()">☰</button>
+</header>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<!-- Боковое меню -->
+<aside class="side-menu" id="side-menu">
+  <button class="close-btn" onclick="closeMenu()">✖</button>
+  <ul>
+    <li><a href="#">Выбрать студию</a></li>
+    <li><a href="#">Тест – выбор направления</a></li>
+    <li><a href="#">Расписание</a></li>
+    <li><a href="#">Цены</a></li>
+    <li><a href="#">Акции и мероприятия</a></li>
+    <li><a href="#">Подарочные сертификаты</a></li>
+    <li><a href="#">Приложение</a></li>
+    <li><a href="#">Контакты студий</a></li>
+    <li><a href="#">О YOGI ROOM</a></li>
+    <li><a href="#">ТУРЫ</a></li>
+    <li><a href="#">ФРАНШИЗА</a></li>
+    <li><a href="#">ВАКАНСИИ</a></li>
+    <li><a href="#">БЛОГ</a></li>
+    <li><a href="#">ОБУЧЕНИЕ ДЛЯ ПРЕПОДАВАТЕЛЕЙ</a></li>
+  </ul>
+</aside>
+<section class="section news">
+  <h1>НОВОСТИ</h1>
+  <p>текст</p>
+
+  <div class="news-container">
+    <div class="news-card">
+      <div class="news-card-line"></div>
+      <div class="news-image-container">
+        <img src="content/images/backgrounds/bg2.jpg" alt="Преподаватель 1">
+      </div>
+      <div class="news-text-container">
+        <h2>Заголовок</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, sapien ut aliquet lacinia, dui neque venenatis lectus, quis condimentum enim eros nec odio. Vestibulum nisl felis, elementum sit amet bibendum eu, vestibulum a justo. Nam elit mauris, posuere sed interdum et, maximus eget metus. Curabitur nibh risus, fermentum vitae ornare vel, bibendum at mi. Cras tempus elit eget scelerisque mattis. Sed ultricies, purus vel vulputate gravida, neque nulla porttitor dui, quis convallis tortor velit eu sapien. Pellentesque euismod lacus nulla, non ultrices tellus egestas id.
+          Aliquam id elit at orci egestas lobortis. Quisque elit elit, suscipit et suscipit ut, tempor vel est. In maximus cursus commodo. Nulla sed tortor mi. Aliquam sagittis est non nisi laoreet tincidunt. Pellentesque a tortor sed augue fermentum suscipit eu gravida urna. Nulla lectus orci, lobortis vel lacus blandit, blandit imperdiet tellus. Suspendisse ac tincidunt nulla. Fusce vel dignissim nisl. Nunc id aliquet orci, eget porttitor purus. Pellentesque bibendum sapien non leo venenatis, sit amet volutpat augue semper.</p>
+        <div class="news-card-lastrow">
+          <button>Читать далее</button>
+          <h3>24.03.2025</h3>
+        </div>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-image-container">
+        <img src="content/images/backgrounds/bg2.jpg" alt="Преподаватель 1">
+      </div>
+      <div class="news-text-container">
+        <h2>Заголовок</h2>
+        <h3>24.03.2025</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, sapien ut aliquet lacinia, dui neque venenatis lectus, quis condimentum enim eros nec odio. Vestibulum nisl felis, elementum sit amet bibendum eu, vestibulum a justo. Nam elit mauris, posuere sed interdum et, maximus eget metus. Curabitur nibh risus, fermentum vitae ornare vel, bibendum at mi. Cras tempus elit eget scelerisque mattis. Sed ultricies, purus vel vulputate gravida, neque nulla porttitor dui, quis convallis tortor velit eu sapien. Pellentesque euismod lacus nulla, non ultrices tellus egestas id.
+          Aliquam id elit at orci egestas lobortis. Quisque elit elit, suscipit et suscipit ut, tempor vel est. In maximus cursus commodo. Nulla sed tortor mi. Aliquam sagittis est non nisi laoreet tincidunt. Pellentesque a tortor sed augue fermentum suscipit eu gravida urna. Nulla lectus orci, lobortis vel lacus blandit, blandit imperdiet tellus. Suspendisse ac tincidunt nulla. Fusce vel dignissim nisl. Nunc id aliquet orci, eget porttitor purus. Pellentesque bibendum sapien non leo venenatis, sit amet volutpat augue semper.</p>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-image-container">
+        <img src="content/images/backgrounds/bg2.jpg" alt="Преподаватель 1">
+      </div>
+      <div class="news-text-container">
+        <h2>Заголовок</h2>
+        <h3>24.03.2025</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, sapien ut aliquet lacinia, dui neque venenatis lectus, quis condimentum enim eros nec odio. Vestibulum nisl felis, elementum sit amet bibendum eu, vestibulum a justo. Nam elit mauris, posuere sed interdum et, maximus eget metus. Curabitur nibh risus, fermentum vitae ornare vel, bibendum at mi. Cras tempus elit eget scelerisque mattis. Sed ultricies, purus vel vulputate gravida, neque nulla porttitor dui, quis convallis tortor velit eu sapien. Pellentesque euismod lacus nulla, non ultrices tellus egestas id.
+          Aliquam id elit at orci egestas lobortis. Quisque elit elit, suscipit et suscipit ut, tempor vel est. In maximus cursus commodo. Nulla sed tortor mi. Aliquam sagittis est non nisi laoreet tincidunt. Pellentesque a tortor sed augue fermentum suscipit eu gravida urna. Nulla lectus orci, lobortis vel lacus blandit, blandit imperdiet tellus. Suspendisse ac tincidunt nulla. Fusce vel dignissim nisl. Nunc id aliquet orci, eget porttitor purus. Pellentesque bibendum sapien non leo venenatis, sit amet volutpat augue semper.</p>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-image-container">
+        <img src="content/images/backgrounds/bg2.jpg" alt="Преподаватель 1">
+      </div>
+      <div class="news-text-container">
+        <h2>Заголовок</h2>
+        <h3>24.03.2025</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, sapien ut aliquet lacinia, dui neque venenatis lectus, quis condimentum enim eros nec odio. Vestibulum nisl felis, elementum sit amet bibendum eu, vestibulum a justo. Nam elit mauris, posuere sed interdum et, maximus eget metus. Curabitur nibh risus, fermentum vitae ornare vel, bibendum at mi. Cras tempus elit eget scelerisque mattis. Sed ultricies, purus vel vulputate gravida, neque nulla porttitor dui, quis convallis tortor velit eu sapien. Pellentesque euismod lacus nulla, non ultrices tellus egestas id.
+          Aliquam id elit at orci egestas lobortis. Quisque elit elit, suscipit et suscipit ut, tempor vel est. In maximus cursus commodo. Nulla sed tortor mi. Aliquam sagittis est non nisi laoreet tincidunt. Pellentesque a tortor sed augue fermentum suscipit eu gravida urna. Nulla lectus orci, lobortis vel lacus blandit, blandit imperdiet tellus. Suspendisse ac tincidunt nulla. Fusce vel dignissim nisl. Nunc id aliquet orci, eget porttitor purus. Pellentesque bibendum sapien non leo venenatis, sit amet volutpat augue semper.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="index.js"></script>
+<footer class="yogi-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h2>YOGI ROOM</h2>
+      <p>Йога рядом. Йога для всех.</p>
+      <div class="social-links">
+        <a href="#"><img src="content/images/icons/insta.png" alt="Instagram"></a>
+        <a href="#"><img src="content/images/icons/vk.png" alt="VK"></a>
+        <a href="#"><img src="content/images/icons/telegram.png" alt="Telegram"></a>
+      </div>
+      <p><a href="mailto:info@yogiroom.ru" class="email-link">info@yogiroom.ru</a></p>
+      <p><a href="#">Политика конфиденциальности</a></p>
+      <p><a href="#">Согласие на обработку персональных данных</a></p>
+      <p><a href="#">Оферта</a></p>
+    </div>
+    <div class="footer-section">
+      <h3>Адреса студий</h3>
+      <ul>
+        <li><a href="#">Направления</a></li>
+        <li><a href="#">Расписание</a></li>
+        <li><a href="#">Цены</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>О YOGI ROOM</h3>
+      <ul>
+        <li><a href="#">Миссия</a></li>
+        <li><a href="#">Вакансии</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Мероприятия и акции</h3>
+      <ul>
+        <li><a href="#">Туры</a></li>
+        <li><a href="#">Франшиза</a></li>
+        <li><a href="#">Обучение для преподавателей</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-icons">
+    <a href="#"><img src="chat-icon.png" alt="Chat"></a>
+    <a href="#"><img src="up-arrow-icon.png" alt="Up"></a>
+  </div>
+</footer>
+
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

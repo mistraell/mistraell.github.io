@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Йога</title>
+</head>
+<body>
+<div class="scroll-progress"></div>
+<header class="top-menu">
+  <div class="logo"><img src="content/images/logo.png"></div>
+  <nav class="nav-links">
+    <a href="#about">О НАС</a>
+    <a href="teachers.html">ПРЕПОДАВАТЕЛИ</a>
+    <a href="#">НАПРАВЛЕНИЯ</a>
+    <a href="#">РАСПИСАНИЕ</a>
+    <a href="catalog.html">КАТАЛОГ</a>
+    <a href="news.html">НОВОСТИ</a>
+    <a href="news.html#actions">АКЦИИ</a>
+    <a href="#">ОТЗЫВЫ</a>
+    <a href="#">КОНТАКТЫ</a>
+  </nav>
+  <button class="menu-toggle" onclick="openMenu()">☰</button>
+</header>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<!-- Боковое меню -->
+<aside class="side-menu" id="side-menu">
+  <button class="close-btn" onclick="closeMenu()">✖</button>
+  <ul>
+    <li><a href="#">Выбрать студию</a></li>
+    <li><a href="#">Тест – выбор направления</a></li>
+    <li><a href="#">Расписание</a></li>
+    <li><a href="#">Цены</a></li>
+    <li><a href="#">Акции и мероприятия</a></li>
+    <li><a href="#">Подарочные сертификаты</a></li>
+    <li><a href="#">Приложение</a></li>
+    <li><a href="#">Контакты студий</a></li>
+    <li><a href="#">О YOGI ROOM</a></li>
+    <li><a href="#">ТУРЫ</a></li>
+    <li><a href="#">ФРАНШИЗА</a></li>
+    <li><a href="#">ВАКАНСИИ</a></li>
+    <li><a href="#">БЛОГ</a></li>
+    <li><a href="#">ОБУЧЕНИЕ ДЛЯ ПРЕПОДАВАТЕЛЕЙ</a></li>
+  </ul>
+</aside>
+<section class="section teachers" id="teachers">
+  <h1>НАШИ ПРЕПОДАВАТЕЛИ</h1>
+  <p>Принимаем в команду только сертифицированных инструкторов с большим практическим опытом</p>
+
+  <div class="teachers" id="teachers-list">
+    <div class="teacher-card">
+      <div class="teacher-image-container">
+        <img src="content/images/teachers/teacher1.png" alt="Преподаватель 1">
+      </div>
+      <div class="description-container">
+        <h3>John Doe</h3>
+        <p>Йога</p>
+        <p>текст с описанием на несколько строчек, полное описание во всплывающей картчоке</p>
+      </div>
+      <button>Узнать ближе</button>
+    </div>
+    <div class="teacher-card">
+      <div class="teacher-image-container">
+        <img src="content/images/teachers/teacher1.png" alt="Преподаватель 1">
+      </div>
+      <div class="description-container">
+        <h3>John Doe</h3>
+        <p>Йога</p>
+      </div>
+      <button>ЗАГРУЗИТЬ ЕЩЕ</button>
+    </div>
+    <div class="teacher-card">
+      <div class="teacher-image-container">
+        <img src="content/images/teachers/teacher1.png" alt="Преподаватель 1">
+      </div>
+      <div class="description-container">
+        <h3>John Doe</h3>
+        <p>Йога</p>
+      </div>
+      <button>ЗАГРУЗИТЬ ЕЩЕ</button>
+    </div>
+    <div class="teacher-card">
+      <div class="teacher-image-container">
+        <img src="content/images/teachers/teacher1.png" alt="Преподаватель 1">
+      </div>
+      <div class="description-container">
+        <h3>John Doe</h3>
+        <p>Йога</p>
+      </div>
+      <button>ЗАГРУЗИТЬ ЕЩЕ</button>
+    </div>
+
+  </div>
+
+  <button class="btn primary" id="load-more">ЗАГРУЗИТЬ ЕЩЕ</button>
+</section>
+<script src="index.js"></script>
+<footer class="yogi-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h2>YOGI ROOM</h2>
+      <p>Йога рядом. Йога для всех.</p>
+      <div class="social-links">
+        <a href="#"><img src="content/images/icons/insta.png" alt="Instagram"></a>
+        <a href="#"><img src="content/images/icons/vk.png" alt="VK"></a>
+        <a href="#"><img src="content/images/icons/telegram.png" alt="Telegram"></a>
+      </div>
+      <p><a href="mailto:info@yogiroom.ru" class="email-link">info@yogiroom.ru</a></p>
+      <p><a href="#">Политика конфиденциальности</a></p>
+      <p><a href="#">Согласие на обработку персональных данных</a></p>
+      <p><a href="#">Оферта</a></p>
+    </div>
+    <div class="footer-section">
+      <h3>Адреса студий</h3>
+      <ul>
+        <li><a href="#">Направления</a></li>
+        <li><a href="#">Расписание</a></li>
+        <li><a href="#">Цены</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>О YOGI ROOM</h3>
+      <ul>
+        <li><a href="#">Миссия</a></li>
+        <li><a href="#">Вакансии</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Мероприятия и акции</h3>
+      <ul>
+        <li><a href="#">Туры</a></li>
+        <li><a href="#">Франшиза</a></li>
+        <li><a href="#">Обучение для преподавателей</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-icons">
+    <a href="#"><img src="chat-icon.png" alt="Chat"></a>
+    <a href="#"><img src="up-arrow-icon.png" alt="Up"></a>
+  </div>
+</footer>
+
+</body>
+</html>
