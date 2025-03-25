@@ -16,3 +16,27 @@ document.addEventListener("scroll", function () {
 
     scrollProgress.style.width = scrollPercentage + "%";
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const chatButton = document.getElementById('chatButton');
+    const chatModal = document.getElementById('chatModal');
+    const closeButton = document.querySelector('.close');
+
+    chatButton.addEventListener('click', function() {
+        chatModal.style.display = 'block';
+        this.classList.add('active');
+    });
+
+    closeButton.addEventListener('click', function() {
+        chatModal.style.display = 'none';
+        chatButton.classList.remove('active');
+    });
+
+    // Закрытие при клике вне модального окна
+    window.addEventListener('click', function(event) {
+        if (event.target === chatModal) {
+            chatModal.style.display = 'none';
+            chatButton.classList.remove('active');
+        }
+    });
+});
