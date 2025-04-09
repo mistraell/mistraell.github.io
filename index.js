@@ -17,7 +17,14 @@ document.addEventListener("scroll", function () {
     scrollProgress.style.width = scrollPercentage + "%";
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+
+document.addEventListener("DOMContentLoaded", function () {
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        })
+        .catch(error => console.error('Ошибка загрузки футера:', error));
     const chatButton = document.getElementById('chatButton');
     const chatModal = document.getElementById('chatModal');
     const closeButton = document.querySelector('.close');
@@ -32,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         chatButton.classList.remove('active');
     });
 
-    // Закрытие при клике вне модального окна
     window.addEventListener('click', function(event) {
         if (event.target === chatModal) {
             chatModal.style.display = 'none';
@@ -40,27 +46,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-const btnUp = {
-    el: document.querySelector('#btn-up'),
-    show() {
-        this.el.classList.remove('footer-icon-up');
-    },
-    hide() {
-        this.el.classList.add('footer-icon-up-hide');
-    },
-    addEventListener() {
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY || document.documentElement.scrollTop;
-            scrollY > 400 ? this.show() : this.hide();
-        });
-        document.querySelector('#btn-up').onclick = () => {
-            window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: 'smooth'
-            });
-        }
-    }
-}
-btnUp.addEventListener();
