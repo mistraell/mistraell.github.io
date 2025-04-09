@@ -783,6 +783,10 @@ section.about {
     border-radius: 50%;
     background: #00b388;
 }
+.footer-icon-up-hide{
+    display:none;
+}
+
 .section.catalog {
     display: block;
     background: #e9e8e8;

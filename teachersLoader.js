@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-
     function createTeacherCard(teacher) {
         const card = document.createElement('div');
         card.className = 'teacher-card';
@@ -41,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="description-container">
                     <h3>${teacher.name}</h3>
-                    <p>${teacher.activity}</p>
+                    <p>${teacher.activity}</p>    
                     <p>${teacher.shortDescription}</p>
                 </div>
             <button class="view-details-btn" data-id="${teacher.id}">Узнать ближе</button>
@@ -49,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         return card;
     }
-
 
     loadMoreBtn.addEventListener('click', loadTeachers);
 
@@ -61,13 +59,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-
     function showTeacherModal(teacher) {
         const modal = document.createElement('div');
         modal.classList.add('teacher-modal');
 
         modal.innerHTML = `
         <div class="modal-content">
+      
                 <span class="close-modal">&times;</span>
                 <img src="content/images/teachers/${teacher.photo}" alt="${teacher.name}">
                 <h2>${teacher.name}</h2>
@@ -78,10 +76,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.appendChild(modal);
 
 
+
         const closeBtn = modal.querySelector('.close-modal');
         closeBtn.addEventListener('click', () => {
             closeModal(modal);
         });
+
         modal.addEventListener('click', (e) => {
             if (e.target === modal) {
                 closeModal(modal);
@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     function closeModal(modal) {
         modal.classList.add('closing');
-
 
         modal.addEventListener('animationend', () => {
             modal.remove();
